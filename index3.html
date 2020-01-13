@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="stylesheet3.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <title>6.2</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">menu</button>
+        <div class="dropdown-items">
+        <a link href="whatiscode6.html">Main Menu</a>
+        <a link href="index1.html"> How Are Apps Made?</a>
+        <a link href="index2.html">The Framework: Wilder, Younger Cousin of the Software Development Kit</a></h2>
+        <a link href="index3.html">What Is Debugging?</a>
+        <a link href="index4.html">Nothing Is Built</a>
+        <a link href="index5.html">How Does Testing Work?</a>
+        <a link href="index6.html">And Now for Something Beautiful</a>
+    </div>
+    </div>
+    <h1>6.2 What Is Debugging?</h1>
+    <div class="summary">
+        <p>Programming is debugging, and debugging is annoying and hard. A lot of a programmer’s time goes into trying to figure out what went wrong, which could be as simple as a missing semi-colon. A stack overflow is when a bug causes a program to quit, fills up the memory of a computer and uses all its resources, so the computer has to be restarted. This is not ideal, so there is a website, <a href=”https://stackoverflow.com/”> stackoverflow.com</a> in which programmers ask questions and help each other solve bugs. </p>
+    </div>
+    <h2>in the words of Paul Ford:</h2>
+    <div class= "ogtext">
+        <p>In programming, there are as many ways to destroy something as to create something. One stray character is all that’s required. Say you forget a semicolon or use an accented “é” somewhere, but the code is not prepared for such a peculiarity—KABOOM! Or you add two things together, but one is the numeral 4 and the other is “4” as a string, as you might use to say “4 and 20 blackbirds baked in a pie.” To the computer, that “4 and 20” has no numeric significance.</p>
+        <p>This sort of thing really happens, and part of the job is remembering that 4 + 20 is 24 and 4 + “20” is “420”.</p>
+    </div>
+    <div class="footnote">
+        <p>The concatenation operation should have produced "420", with no period inside the quotation marks. <a href="https://github.com/BloombergMedia/whatiscode/issues/76" target="_blank"> Thanks to @castaway on GitHub </a> </p>
+    </div>
+    <div class= "ogtext">
+        <p>Programming is debugging. It’s the expectation that things won’t work. This is not something people bring up, just like they don’t bring up their medical history on the first date. Most languages have constructs built in for catching failures, trapping them like wild animals, examining them, and, well, exterminating them. In time, as the relationship between you and a programming language blossoms, you come to realize that what truly characterizes a language is not what it does, but how it tells you what broke. Most of your programming life will be spent trying to figure out what broke, and if the computer helps you, maybe you can watch your kids play soccer.</p>
+        <p>When I started programming I felt that each time the program crashed, I’d failed. I found myself cringing, desperate, unable to move forward. There’s even a novel by Ellen Ullman, The Bug, about the anxieties and social complexities that arise when a serious bug is hard to find.</p>
+        <p>BUG GRAPHIC OR PIC</p>
+        <p>Eventually, though, I learned to submit. I let myself drift into the computer, to remember the math I know, the things I understand about types and categories and lists and syntax. Sometimes bugs cause error messages to pop up; sometimes they cause the program to give up the ghost and quit suddenly; sometimes they get caught in terrible loops and fill up the memory and choke all the resources of the computer until it has to be restarted. That’s called a stack overflow. Sometimes a request goes too hard, for example, calling itself so many times that the stack, which is a finite resource, fills up and can’t take it anymore. Hence the name of the website Stack Overflow, where programmers go to answer questions and help each other solve bugs. It’s the 62nd-most-visited website in the world, trailing Craigslist by a few spots.</p>
+        <p>Randomly selected item from Stack Overflow, to give you a taste of programming:</p>
+        <p class="indent">Angular 1.3 + ui-router + generator-hg-poly embedding nested(?) views not working</p>
+        <p class="indent">— <a href="https://stackoverflow.com/questions/28800011/angular-1-3-ui-router-generator-ng-poly-embedding-nested-views-not-workin"> TheOncomingCode, StackOverflow.com </a></p>
+        <p>JavaScript and another piece of code called ui-router. Judging from its name, the latter helps set up routes to address components of a user interface—that is, it helps manage how you view your data.</p>
+        <p>But wait, it turns out that generator-hg-poly is actually generator-ng-poly, which … Oh, man. I went and looked at that tool, and it describes itself as a—brace yourself—“Yeoman generator for modular AngularJS apps with Gulp and optional Polymer support,” which, I mean, come the hell on. But you know what? In for a pound. Let’s do this.</p>
+        <p>A search for Yeoman says it’s a scaffolding tool, which means it makes little folders for your Web apps that help you get started programming. Useful. …</p>
+        <p>We know what Angular is; it’s a framework. …</p>
+        <p>Gulp, its website says, will “automate and enhance your workflow.” You can intuit, using context clues, that it’s a tool that helps you build software. Somehow. You’d never know this from the salmon background on its site, and sometimes you simply get so, so tired. …</p>
+        <p>Polymer is a “Web components” library, which means it gives you little reusable code components you can use on your Web pages—sliding drawers and drop-down menus, buttons, etc. OK.</p>
+        <p>So what we know now is that the combination of Angular, ui-router, Yeoman, Gulp, and Polymer is somehow not working for TheOncomingCode. All of these things are tools designed to make it easier to code. But they all introduce their own complexity. This person is trying to make a Web browser do something in JavaScript, and it’s crapping out.</p>
+        <p>Someone came in to answer this question, too. “To be able to use the header state in the home state,” wrote Stack Overflow user Matt Tester, “they will need to [be] nested (chained). So, it’s not obvious, but you can safely make one state the parent of another in separate files/configs because of the way registration works.” So. There you go. That solves it.</p>
+        <p>JavaScript is fast-moving right now. Too much of what you know today will be useless in six months. Every hard-fought factoid about the absolute best and most principled way to use the language will be fetid zoo garbage by the end of the year. And some sniveling, bearded man-toddler will be looking slightly to your right with his pale, buzzword-infected eyes and awkwardly mumbling, “Yeah, no, wow, it says you have a lot of Gulp and Angular, but I’m guessing you don’t use Fleejob or Grimmex with the Snurt extensions? (Long sigh.) I’m just not sure if you’re gonna like working here.”</p>
+        <p>Anyway, that’s one question on Stack Overflow.</p>
+    </div>
+</body>
+</html>

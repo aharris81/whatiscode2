@@ -1,0 +1,62 @@
+
+a { 
+    color: gray; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid black;
+    font-family: 'Quicksand', sans-serif;
+    grid-auto-rows: 280px;
+    text-align: center;
+}
+
+.whatiscode1 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    margin: 1px;
+}
+
+.paulford1 {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 1px;
+    color: #515151;
+}
+
+.paulford2 {
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 1px;
+    color: #515151;
+}
+
+.whatiscode2 {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    margin: 1px;
+}
+
+a:link {
+    text-decoration: none ;
+  }
+
+a:hover {
+    color: black;
+}
+
+.chapter6 {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2px;
+    color: #282828;
+    font-weight: lighter;
+}
